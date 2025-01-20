@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>HTML5 Doctor | Element Index</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body id="home">
+{% for log in posts %}
+	<h1>{{log["title"]}}</h1>
+{% endfor %}
+</body>
+</html>
+

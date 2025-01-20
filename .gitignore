@@ -1,0 +1,5 @@
+# Ignoring the .venv folder
+.venv/
+
+# Ignoring git folder
+.git/
