@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>HTML5 Doctor | Element Index</title>
-<link rel="stylesheet" href="style.css" />
-</head>
+	<meta charset="utf-8" />
+	<title>Bpost</title>
+	<link rel="stylesheet" href="style.css" />
+</head>	
 <body id="home">
-{% for log in posts %}
-	<h1>{{log["title"]}}</h1>
-{% endfor %}
+	{% for post in posts %}
+		{%if post["id"] == 2%}
+			<h1>{{post["title"]}}</h1>
+			<h2>{{post["subtitle"]}}</h2>
+			<p>{{post["body"]}}</p>
+		{% endif %}
+	{% endfor %}
+	<a href="{{url_for('home')}}">Go home</a>
 </body>
 </html>
 

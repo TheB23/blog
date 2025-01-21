@@ -3,3 +3,5 @@
 
 # Ignoring git folder
 .git/
+# Ignores the run.sh file 
+run-server.sh
